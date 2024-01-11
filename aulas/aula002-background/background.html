@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plano de fundo</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html, body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        div.container {
+            text-align: center;
+        }
+
+        div > div {
+            width: 300px;
+            height: 200px;
+            margin: 10px 0px 0px 0px;
+            padding: 15px;
+            display: inline-block;
+            position: relative;
+        }
+
+        div > p {
+            text-align: justify;
+            text-indent: 30px;
+        }
+
+        div#color-1 {
+            background-color: lightgreen;
+            opacity: 0.3;
+        }
+
+        div#color-2 {
+            background-color: rgb(144, 238, 144, 0.3);
+        }   
+
+        div#imagem-1, div#imagem-2 {
+            font-weight: bold;
+            color: rgb(255, 244, 244);
+            background-image: url(imagens/background.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+
+        div#imagem-1 {
+            position: relative;
+            bottom: 28px;
+        }
+
+        div#imagem-2 > p {
+            background-color: rgba(0, 0, 0, 0.541);
+            padding: 10px;
+        }
+
+        div#attachment-1, div#attachment-2 {
+            height: 300px;
+            background-color: red;
+            position: relative;
+            padding: 0px;
+    
+        }
+
+        div#attachment-1 iframe, div#attachment-2 iframe {
+            height: 100%;
+        }
+
+        div#short-hand {
+            height: 500px;
+            width: 604px;
+            background: aliceblue url(imagens/background.jpg) no-repeat fixed left center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div id="color-1">
+                <P>quando coloca opacity direto na div, alem do background ficar transparente o texto tambem ficara</P>
+            </div>
+            <div id="color-2">
+                <p>quando coloca opacity so na cor do background usando rgba, você tem uma resultado parecido com isso</p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="imagem-1">
+                <p>ja com o background-image você consegue colocar imagem em um elemento especifico ou no body inteiro, todos os elementos que aceitam a propriedade background-color aceitam background-image</p>
+            </div>
+            <div id="imagem-2">
+                <p>tente nunca usar imagens de background que atrapalher a visibilidade do conteudo, caso seja necessario, pode usar um background-color no conteudo para deixa-lo mais destacado em comparação com a imagem de fundo</p>
+            </div>
+        </div>
+        <!-- Note que a div 5 usa background-attachment: scroll; enquanto a div 6 usa background-attachment: fixed; -->
+        <div class="container">
+            <div id="attachment-1">
+                <iframe src="paginas/pagina001.html" frameborder="0">
+                    <p>seu dispositivo não é compativel com iframes</p>
+                </iframe>
+            </div>
+            <div id="attachment-2">
+                <iframe src="paginas/pagina002.html" frameborder="0">
+                    <p>seu dispositivo nao é compativel com iframes</p>
+                </iframe>
+            </div>
+        </div>
+            <!-- Observe no css que foi utilizado um shorthand background para os estilos de plano de fundo desta div, o shorthand de back ground deve ser utilizado nesta ordem: 
+            background-color
+            background-image
+            background-repeat
+            background-attachment
+            background-position -->
+            <div class="container">
+                <div id="short-hand">
+                </div>
+            </div>
+    </main>
+</body>
+</html>

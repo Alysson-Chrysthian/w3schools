@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        h1 {
+            font-size: 1.5em;
+        }
+
+        p#no-shorthand {
+            width: 500px;
+
+            font-style: italic;
+            font-variant: small-caps;
+            font-weight: bold;
+            font-size: 2em;
+            line-height: 1.1em;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p#shorthand {
+            width: 500px;
+            font: italic small-caps bold 2em/1.1em Arial;
+        }
+    </style>
+</head>
+<body>
+    <p id="no-shorthand">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe necessitatibus sunt inventore ducimus nulla dicta quas corporis unde cupiditate. Accusantium aliquam doloremque consequuntur placeat deserunt sapiente ut vero dignissimos saepe.</p>
+
+    <h1>Agora o mesmo codigo acima porem com um shorthand</h1>
+    
+    <p id="shorthand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi ea voluptate itaque quae rem perspiciatis quaerat aperiam, repudiandae ullam quam a beatae culpa odio voluptates natus mollitia doloribus sequi!</p>
+</body>
+</html>

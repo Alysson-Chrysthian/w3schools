@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+        div.div {
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+            margin: 5px;
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        div#div1:active {
+            visibility: hidden;
+        }
+
+        div#div2:active {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quod aliquid. <span>Quis autem voluptatibus quidem totam ullam atque neque accusantium, voluptatem </span>dicta corporis vitae ratione! Exercitationem eum sequi minus voluptate.
+        </p>
+        <h1>Diferença entre Display e Vissibility</h1>
+        <div>
+            <div id="div1" class="div">
+                <p>Clique em mim para ver um exemplo de vissibility: hidden;</p>
+            </div>
+            <div id="div2" class="div">
+                <p>Clique em mim para ver um exemplo de display: none;</p>
+            </div>
+            <div class="div">
+                <p>div para usar de comparação</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

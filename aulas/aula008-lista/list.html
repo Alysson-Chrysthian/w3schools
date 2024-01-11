@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            padding: 10px;
+        }
+
+        div#lista-1 ol {
+            margin: 10px;
+            background-color: rgb(212, 104, 104);
+            padding: 40px;
+            list-style-type: upper-roman;
+        }
+
+        div#lista-1 ol li {
+            padding: 5px;
+            background-color: rgb(238, 187, 187);
+        }
+
+        div#lista-1 ul {
+            margin: 10px;
+            padding: 40px;
+            background-color: rgb(103, 103, 204);
+        }
+
+        div#lista-1 ul li {
+            padding: 5px;
+            background-color: rgba(240, 248, 255, 0.623);
+        }
+
+        div#lista-2 ul {
+            padding: 40px;
+            list-style-type: square;
+            list-style-image: url('imagens/datacite-icon.png');
+            list-style-position: inside;
+        }
+
+        div#lista-3 ul {
+            padding: 40px;
+            list-style: square url(imagens/datacite-icon.png) inside;
+        }
+    </style>
+</head>
+<body>
+    <div id="lista-1">
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <div id="lista-2">
+        <h2>Sem shorthand</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+
+    <div id="lista-3">
+        <h2>Com shorthand</h2>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+    </div>
+</body>
+</html>

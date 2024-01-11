@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        main {
+            width: 500px;
+            margin: auto;
+            background-color: gray;
+        }
+
+        div {
+            margin: auto;
+            margin-bottom: 20px;
+            height: 100px;
+            width: 200px;
+            background-color: orange;
+        }
+
+        #div1{overflow: hidden;}
+        #div2{overflow: scroll;}
+        #div3{overflow: auto;}
+        #div4{overflow: visible;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>OVERFLOW PROPERTY</h1>
+    </header>
+    <main>
+        <div id="div1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium voluptas, impedit odit magni velit quibusdam eveniet enim aperiam totam facilis voluptatem dicta ipsum esse rerum corporis reiciendis sapiente nihil! Cupiditate.</p>
+        </div>
+        <div id="div2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, commodi voluptatem. Aliquid fugit sit enim exercitationem. Nihil incidunt adipisci maiores quo tempore sint enim porro consequuntur, cupiditate ipsum. Non, molestiae?</p>
+        </div>
+        <div id="div3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptates rerum natus repellendus quo corrupti non possimus alias impedit eius delectus cupiditate autem velit, nihil incidunt ipsum commodi, error odit!</p>
+        </div>
+        <div id="div4">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic fuga molestiae iusto ipsa, eaque illo, quibusdam blanditiis nam saepe atque eum asperiores illum veniam architecto reprehenderit laborum earum alias nostrum!</p>
+        </div>
+    </main>
+</body>
+</html>

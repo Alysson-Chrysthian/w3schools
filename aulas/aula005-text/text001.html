@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div#text1 {
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: black;
+            color: wheat;
+            padding: 10px;
+        }
+
+        div#text1 h1 {
+            text-align: center;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        div#text1 p {
+            text-align: justify;
+            text-align-last: center;
+        }
+
+        div#text2 {
+            background-color: cadetblue;
+            color: white;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        div#text2 span {
+            vertical-align: super;
+        }
+    </style>
+</head>
+<body>
+    <div id="text1">
+        <h1>1 olutiT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio voluptates et atque cum nobis ratione aut? Ad ullam sit quia esse magni tempore eos ipsum deserunt, dolores quae ab? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum numquam vitae iusto architecto! Illum iure optio error, et quia inventore atque. Pariatur quam vero enim ad et iure assumenda repellendus!</p>
+    </div>
+
+    <div id="text2">
+        <h1>Titulo 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span>Eum incidunt</span> eos mollitia quibusdam culpa enim fugit recusandae nobis alias aliquam velit voluptate vero beatae commodi corporis dolores, accusamus sit molestias??</p>
+    </div>
+</body>
+</html>

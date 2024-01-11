@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes</title>
+    <style>
+        p {
+            width: 460px;
+            line-height: 23px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        p#normal{font-style: normal;}
+        p#italico{font-style: italic;}
+        p#obliquio{font-style: oblique;}
+
+        p#sem-força{font-weight: normal;}
+        p#negrito{font-weight: bold;}
+        p#muito-negrito{font-weight: bolder;}
+
+        p#variant-normal{font-variant: normal;}
+        p#variant-pq{font-variant: small-caps;}
+    </style>
+</head>
+<body>
+    <p>Temos tambem a propriedade "font-style: ; que pode ser usado para definir um texto como italico, obliquio, ou normal, sendo o obliquio muito similar com o italico, porem menos compativel</p>
+
+    <p id="normal">texto normal</p>
+    <p id="italico">texto em italico</p>
+    <p id="obliquio">texto obliquio</p>
+
+    <p>é tambem possivel utilizar o font-weight: ; para definiar a força de um texto, como por exemplo deizer se ele vai estar em negrito ou nao</p>
+
+    <p id="sem-força">Este é um texto com o font-weight normal</p>
+    <p id="negrito">Este é um texto com o font-weight bold</p>
+    <p id="muito-negrito">Este é um texto com o font-weight bolder</p>
+
+    <p>temos tambem o font-variant: ; para definir a versao da font quer sera utilizada como no exemplo abaixo</p>
+
+    <p id="variant-normal">Este é um texto normal</p>
+    <p id="variant-pq">Este é um texto em smallcaps</p>
+</body>
+</html>

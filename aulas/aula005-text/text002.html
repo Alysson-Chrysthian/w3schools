@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text</title>
+    <style>
+        div#div1 {
+            text-decoration-line: underline;
+            text-decoration-color: aqua;
+        }
+
+        #text1 {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+
+        #text2 {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+
+        #text3 {
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+
+        #text4 {
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+
+        #text5 {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+        #grossura {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: solid;
+            text-decoration-thickness: 15px;
+            margin-bottom: 35px;
+        }
+
+        #grossura-shorthand {
+            text-decoration: underline red solid 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio eius perspiciatis dolorum obcaecati aliquid, esse hic ipsum. Maxime iusto aut necessitatibus, reprehenderit, blanditiis aliquam consequuntur soluta perspiciatis, facilis ea doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, qui at dicta quam eveniet autem ipsum similique ipsam sint eligendi minus magni alias eius odit repellat enim animi soluta porro.</p>
+    </div>    
+
+    <div> 
+        <h1>Estilos de text decoration</h1>
+        <p id="text1">primeiro estilo</p>
+        <p id="text2">segundo estilo</p>
+        <p id="text3">terceiro estilo</p>
+        <p id="text4">quarto estilo</p>
+        <p id="text5">quinto estilo</p>
+    </div>
+
+    <div> 
+        <h1>Grossura do text decoration</h1>
+        <p id="grossura">testando a grossura do text-decoration, com text-decoration-thickness</p>
+    </div>
+    <div> 
+        <p id="grossura-shorthand">a mesma declaraçao acima com um shorthand</p>
+    </div>
+</body>
+</html>
