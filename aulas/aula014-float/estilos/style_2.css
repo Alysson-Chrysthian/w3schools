@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main, div{
+    margin: auto;
+    margin: 5px;
+}
+
+figure img {
+    width: 33.33%;
+    float: left;
+    padding: 5px;
+}

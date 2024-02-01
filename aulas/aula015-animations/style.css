@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/*ORDEM PARA SHORTHAND DE ANIMATION
+
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;*/
+
+/*Key Frames*/
+@keyframes aparecer {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes movimentar {
+    20%  {transform: translate(150px, 250px);}
+    30%  {background-color: blue;}
+    40%  {background-color: green;}
+    90%  {transform: translateX(-500px);}
+    100% {transform: translateX(0px);}
+}
+
+@keyframes resizer {
+    0% {
+        height: 500px;
+        width: 500px;
+    }
+
+    50% {
+        height: 200px;
+        width: 200px; 
+    }
+
+    100% {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+/*Configurações Gerais*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    color: aliceblue;
+}
+
+body {
+    background-color: dimgray;
+}
+
+/*primeira animação*/
+div {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    float: left;
+}
+
+div#div1, div#div2 {
+    padding: 10px;
+}
+
+div#div1 {
+    margin-right: 5px;
+}
+
+div#div1 > p {
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/*segunda animação*/
+div#div2 {
+    animation-name: movimentar, aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease;
+}
+
+/*terceira animação*/
+div#div3 {
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+div#div3 div {
+    position: relative;
+    padding: 10px;
+    animation-name: resizer, aparecer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+div#div3 p {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
