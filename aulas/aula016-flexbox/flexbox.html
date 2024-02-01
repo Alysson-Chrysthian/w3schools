@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: dimgray;
+        }
+
+        div#container {
+            background-color: silver;
+            display: flex;
+            flex-flow: row-reverse wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        div#container div {
+            background-color: rgb(69, 196, 235);
+            width: 150px;
+            padding: 10px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime sit dolorum voluptas numquam, tempore natus</p>
+        </div>
+        <div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maxime sit dolorum voluptas numquam, tempore natus</p>
+        </div>
+    </div>
+</body>
+</html>
