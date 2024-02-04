@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+header h1 {
+    font-family: 'Lobster';
+    color: #120450;
+    text-align: center;
+}
+nav {
+    display: none;
+}
+
+main {
+    padding: 40px;
+}
+
+main section#primeira-section {
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+main section#primeira-section h2 {
+    color: #120450;
+    margin-bottom: 15px;
+}
+
+main span#primeiro-span {
+    font-size: 0.7em;
+    letter-spacing: 0.7em;
+}
+
+main span#segundo-span {font-size: 2.5em;}
+
+main section#primeira-section p {
+    color: gray;
+    margin-bottom: 15px;
+}
+
+main section#primeira-section div {
+    background-color: #FF2978;
+    width: 150px;
+    padding: 20px;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+}
+
+main section#primeira-section div a {
+    text-decoration: none;
+    color: white;
+}
+
+main section#primeira-section div:hover {
+    background-color: #120450;
+}
+
+main section#primeira-section {
+    margin-bottom: 170px;
+}
+
+main section#primeira-section figure img {
+    width: 70vw;
+}
+
+main section#segunda-section h2 {
+    font-family: 'Lobster';
+    font-size: 3em;
+    text-align: center;
+    color: #120450;
+}
+
+main section#segunda-section div#container div{
+    border: 2px solid #FF2978;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+main section#segunda-section div h3 {
+    margin: 15px;
+}
+
+.extra {
+    display: none;
+    padding: 10px;
+}
+
+section#segunda-section div#container div:hover .conteudo {
+    display: none;
+}
+
+section#segunda-section div#container div:hover {
+    color: white;
+    background-color: #FF2978;
+}
+
+section#segunda-section div#container div:hover .extra {
+    display: block;
+}
+
+aside {
+    display: none;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #120450, black);
+    color: white;
+    border-top: 4px solid #FF2978;
+    padding: 90px;
+    text-align: center;
+}
+
+footer p#header-footer {
+    font-family: 'lobster';
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+footer p#copyright {
+    position: relative;
+    top: 50px;
+}
