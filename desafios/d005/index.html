@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alysson Chrysthian">
+    <meta name="description" content="Um site de viajens feito com intuito educacional">
+    <title>Site de Viajens</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/tablet.css" media="screen and (min-width: 450px)">
+</head>
+<body>
+    <header>
+        <div>
+            <span class="material-symbols-outlined" id="simbolo_locate">location_on</span>
+            <h1>Logo</h1>
+            <span class="material-symbols-outlined" id="simbolo_search" style="cursor: pointer;">search</span>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#"><span class="material-symbols-outlined">flightsmode</span>Flight</a>
+            </li>
+            <li>
+                <a href="#"><span class="material-symbols-outlined">hotel</span>Hotel</a>
+            </li>
+            <li>
+                <a href="#"><span class="material-symbols-outlined">local_taxi</span>Rental</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section id="primeira-section">
+            <h2>Travel the world with us</h2>
+            <form action="#" method="#">
+                <div>
+                    <label for="departing">From</label>
+                    <br>
+                    <input type="text" name="departing" id="dptid" placeholder="Departing From" required>
+                </div>
+                <div>
+                    <label for="arriving">To</label>
+                    <br>
+                    <input type="text" name="arriving" id="arvid" placeholder="Arriving at" required>
+                </div>
+                <div>
+                    <input type="submit" value="Search and find dates">
+                </div>
+            </form>
+        </section>
+        <section id="segunda-section">
+            <h2>Good Offers Right Now</h2>
+            <p>Up to <strong>50%</strong>discount</p>
+            <div>
+                <figure>
+                    <img src="imagens/cinqueterre.jpg" alt="">
+                    <p>Cinque Terre</p>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="imagens/newyork.jpg" alt="">
+                    <p>New York</p>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="imagens/sanfran.jpg" alt="">
+                    <p>San Fransisco</p>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="imagens/pisa.jpg" alt="">
+                    <p>Pisa</p>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="imagens/paris.jpg" alt="">
+                    <p>Paris</p>
+                </figure>
+            </div>
+        </section>
+        <section id="terceira-section">
+            <h2>Explore Nature</h2>
+            <p>Travel with us and see nature at its finest</p>
+            <div>
+                <figure>
+                    <img src="imagens/ocean.jpg" alt="">
+                </figure>
+                <div class="description">
+                    <h3>West Coast, Norway</h3>
+                    <p><span>Roundtrip from $79</span></p>
+                    <p>Praesent tincindunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p>Buy tickets</p>
+                </div>
+            </div>
+            <div>
+                <figure>
+                    <img src="imagens/mountains.jpg" alt="">
+                </figure>
+                <div class="description">
+                    <h3>Monstains, Austria</h3>
+                    <p><span>One-way from $39</span></p>
+                    <p>Praesent tincindunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p>Buy tickets</p>
+                </div>
+            </div>
+        </section>
+        <section id="quarto-section">
+            <div>
+                <h2>Get the best offers first!</h2>
+                <p>Join ours new letter</p>
+                <form action="" method="">
+                    <div>
+                        <label for="email">E-mail</label>
+                        <br>
+                        <input type="email" name="email" id="emailid" placeholder="Your Email address" required>
+                    </div>
+                    <div>
+                        <input type="submit" value="Subscrise">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
