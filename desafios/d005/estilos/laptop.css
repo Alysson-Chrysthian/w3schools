@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*Cabeçario*/
+header {justify-content: space-around;}
+
+/*Configurações Gerais*/
+main > div {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/*Primeira Section*/
+section#sct_1 {
+    background-image: url(../imagens/london.jpg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+
+section#sct_1 article {
+    background-color: white;
+    width: 700px;
+    margin: auto;
+}
+
+section#sct_1 h2 {padding: 15px;}
+
+section#sct_1 form > div div {
+    display: inline-block;
+    width: 49.6%;
+}
+
+section#sct_1 form input[type="submit"] {transform: translateX(10px);}
+
+/*segunda Section*/
+section#sct_2 {padding-top: 45px;}
+
+/*Grid de Imagens*/
+section#sct_2 figure p {
+    transform: translate(-15px, -10px);
+}
+
+section#sct_2 #imagens {display: flex;}
+
+section#sct_2 #primeira-imagem {
+    width: 100%;
+    gap: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+section#sct_2 #grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    align-items: first baseline;
+}
+
+/*Terceira Section*/
+section#sct_3 > h2, section#sct_3 > p{
+    padding: 0px 15px;
+}
+
+section#sct_3 #artigos {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px;
+}
+
+/*Quarta Section*/
+section#sct_4 p {
+    padding: 25px 0px;
+}
+
+
+  

@@ -19,20 +19,19 @@ body {background-color: var(--cinza-claro);}
 header {
     background-color: white;
     display: flex;
+    justify-content: space-between;
     color: var(--vermelho);
     padding: 10px;
 }
+
+header h1 {display: inline;}
 
 header span.material-symbols-outlined {
     align-self: center;    
     font-size: 2.5em;
 }
 
-header #search {
-    position: absolute;
-    right: 5px;
-    color: var(--cinza);
-}
+header #search {color: var(--cinza);}
 
 /*Menu de navegação*/
 nav {
@@ -82,6 +81,7 @@ section form input[type="submit"] {
 }
 
 main section {padding: 10px 10px;}
+span.material-symbols-outlined {cursor: pointer;}
 section figure img {width: 100%;}
 section figure p {margin: 0px;}
 
