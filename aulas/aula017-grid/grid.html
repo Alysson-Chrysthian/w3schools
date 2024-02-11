@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+
+        /*Primeira div*/
+        div#container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 20px;
+            background-color: gray;
+            padding: 10px;
+        }
+
+        div#container div {
+            background-color: #1484c5;    
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2em;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+
+        #item-1 {
+            grid-column: 1 / 4;
+        }
+
+        #item-2 {
+            grid-row: 2 / 5;
+        }
+
+        #item-6 {
+            grid-row: 3 / 5;
+            grid-column-start: 3;
+        }
+
+        /*Segunda div*/
+        #container-2 {
+            display: grid;
+            grid-template-columns: 140px 150px 190px;
+            grid-template-rows: 110px 390px;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        #container-2 div {
+            padding: 30px;
+            background-color: #1484c5;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item-1">1</div>
+        <div id="item-2">2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div id="item-6">6</div>
+        <div>7</div>
+    </div>
+
+    <div id="container-2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

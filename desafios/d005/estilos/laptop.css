@@ -47,13 +47,12 @@ section#sct_2 #imagens {display: flex;}
 section#sct_2 #primeira-imagem {
     width: 100%;
     gap: 10px;
-    object-fit: cover;
     margin-right: 15px;
 }
 
 section#sct_2 #grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: first baseline;
 }
