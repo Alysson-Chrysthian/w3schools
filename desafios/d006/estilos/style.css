@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cinza: #808080;
+    --cinza-claro: #8080807c;
+}
+
+body, html {
+    height: 100vh;
+}
+/*Configurações Gerais*/
+section {
+    padding: 100px 40px;
+}
+
+section h3, section h2, section p {
+    font-weight: normal;
+    line-height: 2em;
+    margin-top: 15px;
+}
+
+/*Cabeçario*/
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.267);
+}
+
+header h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    color: var(--cinza);
+    padding: 20px;
+}
+
+/*Menu de Navegação*/
+nav ul {list-style-type: none;}
+nav menu {display: none;}
+nav li.dropdown:hover menu {display: block;}
+nav li a:hover {background-color: var(--cinza);}
+
+nav span:hover {
+    cursor: pointer;
+    background-color: var(--cinza-claro);
+}
+
+nav span {
+    padding: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+}
+
+nav li menu {
+    background-color: black;
+    transform: translateX(-31px);
+    position: absolute;
+}
+
+/*Primeira Section*/
+section#sct_1 {
+    background-image: url(../imagens/background/laptop_mac_bg.jpeg);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 40px 40px 0px 40px;
+}
+
+section#sct_1 article {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    min-height: 100vh;
+}
+
+section#sct_1 h2 {
+    font-size: 3em;
+    line-height: 1.8em;
+    font-weight: normal;
+    padding: 10px 0px;
+}
+
+section#sct_1 #titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#sct_1 #botão {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #d1caca8a;
+    display: inline-block;
+}
+
+section#sct_1 #botão:hover {
+    background-color: #d1caca;
+}
+
+section#sct_1 #botão a {
+    text-decoration: none;
+    color: black;
+}
+
+section#sct_1 img {width: 25px;}
+
+section#sct_1 img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+section#sct_1 #imagens{
+    display: flex;
+    position: absolute;
+    bottom: 1px;
+}
+
+/*Segunda Section*/
+section#sct_2 {
+    text-align: center;
+    padding: 100px 40px;
+}
+
+section#sct_2 span {
+    font-size: 5em;
+}
+
+section#sct_2 #About {
+    padding-top: 70px;
+}
+
+/*Terceira Section*/
+section#sct_3 {
+    background-color: rgba(128, 128, 128, 0.178);
+    text-align: justify;
+}
+
+section#sct_3 div.botão {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+section#sct_3 div a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: inline-block;
+}
+
+section#sct_3 div span {
+    transform: translate(15px, 6px);
+}
+
+section#sct_3 div.botão:hover, section#sct_3 div.botão:hover a {
+    background-color: lightgray;
+    color: black;
+}
+
+section#sct_3 figure img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/*Quarta Section*/
+section#sct_4 {text-align: center;}
+section#sct_4 article > p {margin-bottom: 55px;}
+
+section#sct_4 .time {
+    box-shadow: 1px 4px 10px 2px #00000050;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+section#sct_4 .time div {padding: 10px}
+
+section#sct_4 h3 {
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+section#sct_4 figure img, section#sct_9 figure img {
+    width: 100%;
+    filter: saturate(30%);
+}
+
+section#sct_4 p.cargo {color: gray;}
+
+section#sct_4 div.contact {
+    text-align: center;
+    margin-top: 15px;
+    background-color: #d3d3d38e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+section#sct_4 div.contact a {
+    text-decoration: none;
+    color: black;
+}
+
+section#sct_4 div.contact:hover {background-color: var(--cinza-claro);}
+
+/*Quinta Section*/
+section#sct_5 {
+    background-color: #808080;
+    color: white;
+    text-shadow: -2px 1px 5px #0000005b;
+    text-align: center;
+    padding: 60px;
+}
+
+section#sct_5 p {
+    padding: 0px;
+    margin: 0px;
+}
+
+section#sct_5 h2 {
+    font-size: 2em;
+}
+
+/*Sexta Section*/
+Section#sct_6 {text-align: center;}
+
+section#sct_6 figure img {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+section#sct_6 img:hover {opacity: 0.7;}
+section#sct_6 div {margin-bottom: 10px;}
+
+/*Setima section*/
+section#sct_7 {background-color: lightgray;}
+
+section#sct_7 span {
+    transform: translateY(5px);
+    margin-right: 20px;
+}
+
+section#sct_7 div.bar {
+    background-color:  gray;
+    color: white;
+}
+
+section#sct_7 div.progress {
+    text-align: center;
+    background-color: rgb(68, 68, 68);
+    padding: 4px;
+}
+
+/*Oitava Section*/
+section#sct_8 {
+    background-color: dimgray;
+    text-align: center;
+    color: white;
+}
+
+section#sct_8 .pricing {
+    margin-top: 90px;
+    color: black;
+    background-color: white;
+    box-shadow: 1px 1px 7px 5px rgba(0, 0, 0, 0.281);
+}
+
+section#sct_8 .pricing h2 {
+    background-color: black;
+    color: white;
+    padding: 35px;
+    transform: translateY(-15px)
+}
+
+section#sct_8 .pricing p {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.147);
+    padding: 15px;
+}
+
+section#sct_8 .price p {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+    font-size: 2.5em;
+}
+
+section#sct_8 .price p:nth-child(2) {
+    color: gray;
+    font-size: 1em;
+}
+
+section#sct_8 .entrar {
+    border-top: 1px solid rgba(0, 0, 0, 0.147);
+    padding: 20px;
+    background-color: lightgray;
+}
+
+section#sct_8 .entrar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 20px 25px;
+}
+
+section#sct_8 .entrar a:hover {
+    background-color: var(--cinza-claro);
+    color: black;
+}
+
+section#sct_8 #especial h2 {
+    background-color: rgb(230, 79, 79);
+    padding: 50px;
+}
+
+/*Nona Section*/
+section#sct_9 article > div:nth-child(1) {
+    text-align: center;
+}
+
+section#sct_9 #contatos {
+    text-align: left;
+    margin-top: 40px;
+}
+
+section#sct_9 #contatos p {
+    margin: 0px;
+    padding: 0px;
+}
+
+section#sct_9 #contatos span {
+    margin-right: 25px;
+    font-size: 2em;
+    transform: translateY(10px);
+}
+
+section#sct_9 form {margin: 45px 0px 80px 0px;}
+
+section#sct_9 form input[type="text"], section#sct_9 form input[type="email"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+section#sct_9 form input::placeholder {font-size: 1.3em;}
+section#sct_9 form div {margin: 10px 0px;}
+
+section#sct_9 form input[type="submit"] {
+    padding: 20px 25px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+section#sct_9 form input[type="submit"]:hover {
+    background-color: var(--cinza-claro);
+    color: black;
+}
+
+section#sct_9 figure img {
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+}
+
+footer #imagens-footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 35px;
+    filter: brightness(100);
+}
+
+footer img:hover {opacity: 0.5;}
+
+footer div a {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px 0px;
+    display: inline-block;
+}
+
+footer div a:hover  {
+    background-color: lightgray;
+}
+
+footer span {
+    transform: translateY(3px);
+}
+
+footer p {margin-top: 10px;}
+footer p a {color: white;}

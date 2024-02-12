@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*Cabeçario*/
+header {
+    display: flex;
+    align-items: center;
+}
+
+/*Menu de Navegação*/
+nav li span.material-symbols-outlined {display: none;}
+
+nav li menu {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    background-color: white;
+}
+
+nav li a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 100px;
+    color: black;
+    font-weight: bolder;
+}
+
+nav li a:hover {
+    background-color: lightgray;
+}
+
+/*Primeira Section*/
+section#sct_1 h2 {font-size: 4em;}
+
+/*Segunda Section*/
+section#sct_2 div#About {
+    display: flex;
+    gap: 20px;
+}
+
+/*Terceira Section*/
+section#sct_3 article {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    align-items: center;
+}
+
+
+section#sct_3 div:nth-child(1) {
+    padding-right: 10px;
+}
+
+/*Quarta Section*/
+section#sct_4 article article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/*Quinta Section*/
+section#sct_5 article {
+    display: flex;
+    justify-content: space-around;
+}
+
+/*Sexta Section*/
+section#sct_6 article div {
+    margin-top: 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+
+/*Setima Section*/
+section#sct_7 article {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+section#sct_7 article div {
+    flex: 50%;
+}
+
+/*Oitava Section*/
+section#sct_8 article > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+section#sct_8 article div.pricing {
+    flex-basis: 100%;
+}
