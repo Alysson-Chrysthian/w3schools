@@ -85,7 +85,7 @@ section#sct_1 {
 
 section#sct_1 article {
     display: grid;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     color: white;
     min-height: 100vh;
