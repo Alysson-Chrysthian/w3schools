@@ -162,13 +162,14 @@ main section#sct-1 form input[type="submit"]:active {
 /*Segunda section*/
 main section#sct-2 {
     background-color: white;
-    padding: 50px 20px;
+
 }
 
 main section#sct-2 article {
     text-wrap: nowrap;
     overflow-x: auto;
     margin-bottom: 35px;
+    padding: 50px 20px;
 }
 
 main section#sct-2 article::-webkit-scrollbar {
