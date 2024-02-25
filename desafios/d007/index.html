@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alysson Chrysthian">
+    <meta name="description" content="Um clone frontend, do site do nubank feito com intuito educacional">
+    <title>Nubank - Finalmente você no controle do seu dinheiro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="estilos/style.css" media="all">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="imagens/icones/nubank.png" alt="Nubank_icon">
+        </figure>
+        <nav>
+            <ul>
+                <li>
+                    <span class="material-symbols-outlined">menu</span>
+                    <div>
+                        <div>
+                            <a href="#">Pagina Inicial</a>
+                        </div>
+                        <div>
+                            <a href="#">Para Você</a>
+                        </div>
+                        <div>  
+                            <a href="#">Para seu negocio</a>
+                        </div>
+                        <div>
+                            <a href="#">O Nubank</a>
+                        </div>
+                        <div>
+                            <a href="#">Perguntas</a>
+                        </div>
+                        <div>
+                            <a href="#">Login</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Primeira Section-->
+        <section id="sct-1">
+            <article>
+                <div>
+                    <h1>
+                        Tenha N Possibilidades de produtos para N Possibilidades na vida
+                    </h1>
+                    <p>
+                        O que você precisa pra ficar no controle da sua vida financeira tem no app do Nubank.
+                    </p>
+                </div>
+                <div id="cadastro-cpf">
+                    <form action="cpf.php" method="get">
+                        <h2>
+                            Peça sua conta e cartão de crédito do Nubank
+                        </h2>
+                        <div>
+                            <input type="text" name="cpf" id="cpf-id" placeholder="Digite seu CPF">
+                        </div>
+                        <div>
+                            <input type="submit" value="Continuar">
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+        <!--Segunda Section-->
+        <section id="sct-2">
+            <article>
+                <section>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">monetization_on</span>
+                            <br>
+                            Empréstimo
+                        </h2>
+                        <p class="exp-div">Transparentes, seguros e do seu jeito. Opções de empréstimos que deixam você no controle do início ao fim</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">smartphone</span>
+                            <br>
+                            Seguro celular
+                        </h2>
+                        <p class="exp-div">A mais completa proteção do mercado, seja para furto ou roubo de celular, tela quebrada ou oxidada.</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">shop</span>
+                            <br>
+                            Shopping
+                        </h2>
+                        <p class="exp-div">Um shopping que oferece tudo que você precisa: mais de 150 lojas parceiras, segurança e ótimos preços.</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                </section>
+                <section>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">credit_card</span>
+                            <br>
+                            Parcelamento de compras
+                        </h2>
+                        <p class="exp-div">Parcele suas compras à vista feitas em estabelecimentos físicos e virtuais direto no app do Nubank.</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">credit_card</span>
+                            <br>
+                            Cartão Adicional
+                        </h2>
+                        <p class="exp-div">Cartão de crédito físico adicional para ser compartilhado com outra pessoa utilizando o mesmo limite.</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                    <div>
+                        <h2>
+                            <span class="material-symbols-outlined">favorite</span>
+                            <br>
+                            Seguro de vida
+                        </h2>
+                        <p class="exp-div">Proteja você e quem você ama por a partir de R$4 por mês. Escolha o plano que se encaixa ao seu perfil.</p>
+                        <p class="sbm">Saiba mais <span class="material-symbols-outlined">arrow_forward</span></p>
+                    </div>
+                </section>
+            </article>
+            <div>
+                <span class="material-symbols-outlined">
+                    arrow_back
+                </span>
+                <span class="material-symbols-outlined">
+                    arrow_forward
+                </span>
+            </div>
+        </section>
+        <!--Terceira Section-->
+        <section id="sct-3">
+            <article>
+                <figure>
+                    <img src="imagens/figuras/cartão_de_credito.jpg" alt="foto_da_maquininha">
+                </figure>
+                <h2>
+                    Conheça nosso Cartão de Crédito
+                </h2>
+                <p>
+                    Pode chamar ele de roxinho. Além disso, pode chamar ele de moderno, gratuito e prático também.
+                </p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+            <article>
+                <figure>
+                    <img src="imagens/figuras/mulher_céu.jpg" alt="Mulher olhando o horizonte">
+                </figure>
+                <h2>
+                    Nubank Ultravioleta
+                </h2>
+                <p>
+                    Muito mais que um cartão: uma plataforma exclusiva de benefícios.
+                </p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+        </section>
+        <!--Quarta section-->   
+        <section id="sct-4">
+            <article>
+                <h2>
+                    Faça mais com seu cartão de crédito
+                </h2>
+                <div>
+                    <span class="material-symbols-outlined">today</span>
+                    <h3>Pix no credito</h3>
+                    <p>
+                        Faça pagamentos PIX utilizando seu cartão de crédito. Parcele e aproveite essa vantagem.
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">barcode</span>
+                    <h3>Pagamento de Boleto com cartão de crédito</h3>
+                    <p>
+                        Pague seus boletos no crédito e parcele em até 12 vezes.
+                    </p>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined">reply</span>
+                    <h3>Parcelamento de Compras</h3>
+                    <p>
+                        Comprou e a loja não parcelou? O Nu parcela a compra para você! Simples e prático, direto na sua fatura.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h2>
+                    Mais Produtos Nubank
+                </h2>
+                <div>
+                    <div class="pdr_nu">
+                        <figure>
+                            <img src="imagens/figuras/mulher_com_cell_1.jpg" alt="mulher com celular 1">
+                        </figure>
+                        <div>
+                            <h3>
+                                Emprestimos
+                            </h3>
+                            <p>Transparentes, seguros e do seu jeito: da simulação até a última parcela</p>
+                            <p class="sbm">
+                                Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pdr_nu">
+                        <figure>
+                            <img src="imagens/figuras/mulher_com_cell_2.jpg" alt="mulher com celular 2">
+                        </figure>
+                        <div>
+                            <h3>
+                                Seguro de vida
+                            </h3>
+                            <p>Seguro para proteger você e quem você mais ama: agora e no futuro.</p>
+                            <p class="sbm">
+                                Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pdr_nu">
+                        <figure>
+                            <img src="imagens/figuras/mulher_com_cell_3.jpg" alt="mulher com celular 3">
+                        </figure>
+                        <div>
+                            <h3>
+                                Seguro celular
+                            </h3>
+                            <p>Para você não ficar sem curtir seu celular e tudo que você pode fazer com ele.</p>
+                            <p class="sbm">
+                                Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--Quinta Section-->
+        <section id="sct-5">
+            <article>
+                <figure>
+                    <img src="imagens/figuras/pessoa_1.jpg" alt="">
+                </figure>
+                <h2>
+                    Invista seu dinheiro
+                </h2>
+                <p>O plano é facilitar seus planos. Comece hoje com as Caixinhas do Nubank.</p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="imagens/figuras/pessoa_2.jpg" alt="">
+                </figure>
+                <h2>
+                    Conta do Nubank
+                </h2>
+                <p>Manter suas contas em dia nunca foi tão simples com Assistente de Pagamentos.</p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="imagens/figuras/pessoa_3.jpg" alt="">
+                </figure>
+                <h2>
+                    Conta PJ
+                </h2>
+                <p>Ficou mais fácil organizar o seu negócio com a conta PJ do Nubank</p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+
+            <article>
+                <figure>
+                    <img src="imagens/figuras/pessoa_4.jpg" alt="">
+                </figure>
+                <h2>
+                    Shopping do Nu
+                </h2>
+                <p>Tem shopping no seu bank! Mais de 150 parceiros com ofertas para você aproveitar.</p>
+                <p class="sbm">
+                    Saiba mais <span class="material-symbols-outlined">arrow_forward</span>
+                </p>
+            </article>
+        </section>
+        <!--Sexta Section-->
+        <section id="sct-6">
+            <article>
+                <section>
+                    <h2>
+                        Fique por dentro das Novidades
+                    </h2>
+                    <p class="sbm">
+                        Ir para o Blog do Nu
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </p>
+                </section>
+                <div>
+                    <div>
+                        <figure>
+                            <img src="imagens/figuras/pessoa_1.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="txt-pq">
+                                Caixinhas
+                            </p>
+                            <p class="txt-dstq">
+                                Caixinhas do Nubank: tudo o que você precisa saber sobre a ferramenta que facilita os seus planos
+                            </p>
+                            <p class="sbm">
+                                Ler artigo
+                                <span class="material-symbols-outlined">
+                                    north_east
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <figure>
+                            <img src="imagens/figuras/pessoa_2.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="txt-pq">
+                                Empréstimo
+                            </p>
+                            <p class="txt-dstq">
+                                Como fazer empréstimo no Nubank? Confira dicas para escolher o crédito certo para você
+                            </p>
+                            <p class="sbm">
+                                Ler artigo
+                                <span class="material-symbols-outlined">
+                                    north_east
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <figure>
+                            <img src="imagens/figuras/pessoa_3.jpg" alt="">
+                        </figure>
+                        <div>
+                            <p class="txt-pq">
+                                N Possibilidades
+                            </p>
+                            <p class="txt-dstq">
+                                10 situações da sua vida que o Nubank ajuda a resolver com N Possibilidades
+                            </p>
+                            <p class="sbm">
+                                Ler artigo
+                                <span class="material-symbols-outlined">
+                                    north_east
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="sct-7">
+            <article>
+                <div>
+                    <h2>
+                        Nós acreditamos que só uma pessoa pode ter controle sobre sua vida financeira: você.
+                    </h2>
+                    <p class="sbm">
+                        Saiba mais sobre como fazemos isso
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        NuCommunity 
+                        <br>
+                        A comunidade oficial do Nubank para você tirar dúvidas e compartilhar ideias.
+                    </h2>
+                    <p class="sbm">
+                        Faça parte
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </p>
+                </div>
+                <div>
+                    <h2>
+                        Conheça nossa central de informações em caso de emergências.
+                    </h2>
+                    <p class="sbm">
+                        Conheça o SOS Nu
+                        <span class="material-symbols-outlined">
+                            north_east
+                        </span>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <h2>Nubank</h2>
+            <ul>
+                <li>Sobre nós</li>
+                <li>Carreiras</li>
+                <li>Perguntas Frequentes</li>
+                <li>Contato</li>
+                <li>Imprensa</li>
+                <li>ESG<span class="material-symbols-outlined">north_east</span></li>
+                <li>Investidores<span class="material-symbols-outlined">north_east</span></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Explore</h2>
+            <ul>
+                <li>Comunidade<span class="material-symbols-outlined">north_east</span></li>
+                <li>Blog<span class="material-symbols-outlined">north_east</span></li>
+                <li>InvestNews<span class="material-symbols-outlined">north_east</span></li>
+                <li>Newsletter<span class="material-symbols-outlined">north_east</span></li>
+                <li>México<span class="material-symbols-outlined">north_east</span></li>
+                <li>Colômbia<span class="material-symbols-outlined">north_east</span></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Veja também</h2>
+            <ul>
+                <li>Tudo sobre o Pix<span class="material-symbols-outlined">arrow_right_alt</span></li>
+                <li>Fornecedores<span class="material-symbols-outlined">arrow_right_alt</span></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Transparência</h2>
+            <ul>
+                <li>Política de privacidade</li>
+                <li>Política de segurança</li>
+                <li>Contratos</li>
+                <li>Relatórios financeiros</li>
+                <li>Ética e compliance</li>
+                <li>Dados abertos</li>
+                <li>SCR</li>
+                <li>Convenção de boletos</li>
+                <li>PLD/CFTP</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Fale com a gente</h2>
+            <ul>
+                <li>
+                    Capitais e Regiões metropolitanas
+                    <br>
+                    4020 0185
+                </li>
+                <li>
+                    Demais localidades
+                    <br>
+                    0800 591 2117
+                </li>
+                <li>meajuda@nubank.com.br</li>
+                <li>Canal de atendimento em libras</li>
+                <li>Atendimento 24h</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Ouvidoria</h2>
+            <ul>
+                <li>0800 887 0463</li>
+                <li>ouvidoria@nubank.com.br</li>
+                <li>Atendimento das 9h às 18h (dias úteis)</li>
+            </ul>
+        </div>
+        <aside>
+            <figure class="nubank_icon">
+                <img src="imagens/icones/nubank.png" alt="">
+            </figure>
+            <p>
+                © 2023 Nu Pagamentos S.A - Instituição de Pagamento. 18.236.120/0001-58
+                <br>
+                Rua Capote Valente, 39 - São Paulo, SP - 05409-000
+            </p>
+            <div id="redes">
+                <figure>
+                    <img src="imagens/icones/likedin_icon.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/icones/youtube_icon.png" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/icones/facebook_icon.jpg" alt="">
+                </figure>
+                <figure>
+                    <img src="imagens/icones/instagram_icon.jpg" alt="">
+                </figure>
+            </div>
+        </aside>
+    </footer>
+</body>
+</html>

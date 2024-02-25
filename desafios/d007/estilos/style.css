@@ -1,0 +1,586 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/*Cabeçario*/
+header {
+    box-shadow: 1px 1px 8px 2px #00000029;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 1;
+}
+
+header figure {
+    padding: 10px;
+}
+
+header figure img {
+    width: 50px;
+}
+
+/*Menu de navegação*/
+nav ul {
+    list-style-type: none;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 5px 0px;
+    position: relative;
+}
+
+nav li a::after {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: black;
+    width: 0px;
+    height: 2px;
+    transition: width 1s;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+nav ul li > div {
+    padding: 10px;
+    position: absolute;
+    right: 0px;
+    background-color: white;
+    display: none;
+}
+
+nav ul li span {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+nav ul li span:hover {
+    background-color: #8000802a;
+}
+
+nav ul li:hover > div {
+    display: block;
+}
+
+/*Primeira Section*/
+main section#sct-1 {
+    height: 800px;
+    text-align: justify;
+    padding: 40px 20px;
+    background-image: url(../imagens/bg/background-sct-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: last baseline;
+}
+
+main section#sct-1 h1 {
+    margin-bottom: 25px;
+    font-size: 1.9em;
+}
+
+/*Formulario da primeira section*/
+main section#sct-1 div#cadastro-cpf {
+    width: 300px;
+    margin: auto;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    margin-top: 60px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+main section#sct-1 div#cadastro-cpf h2 {
+    font-size: 1.3em;
+    margin-bottom: 45px;
+}
+
+/*Campo de texto pro cpf*/
+main section#sct-1 form input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #0000005d;
+    padding: 15px 0px 10px 0px;
+}
+
+main section#sct-1 form input::placeholder {
+    transition: all 0.5s;
+}
+
+main section#sct-1 form input:focus {
+    border: none;
+    border-bottom: 1px solid #0000005d;
+    outline: none;
+}
+
+main section#sct-1 form input:focus::placeholder {
+    transform: translatey(-15px);
+    font-size: 0.8em;
+}
+
+/*Botão de enviar do formulario*/
+main section#sct-1 form input[type="submit"] {
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    color: #8b8a8a;
+    background-color: #8080802c;
+    font-size: 1.05em;
+    cursor: not-allowed;
+}
+
+main section#sct-1 form input[type="submit"]:active {
+    box-shadow: none;
+}
+
+/*Segunda section*/
+main section#sct-2 {
+    background-color: white;
+    padding: 50px 20px;
+}
+
+main section#sct-2 article {
+    text-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 35px;
+}
+
+main section#sct-2 article::-webkit-scrollbar {
+    height: 0px;
+}
+
+main section#sct-2 article section {
+    margin-bottom: 30px;
+}
+
+/*divs da segunda section*/
+main section#sct-2 article div {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    padding: 35px 20px;
+    display: inline-grid;
+    text-wrap: wrap;
+    margin: 0px 10px;
+    position: relative;
+}
+
+main section#sct-2 article div h2 {
+    margin-bottom: 40px;
+}
+
+main section#sct-2 article div p.exp-div {
+    position: absolute;
+    bottom: 70px;
+    padding: 20px;
+}
+
+main section#sct-2 article div p.sbm {
+    position: absolute;
+    bottom: 25px;
+    left: 18px;
+}
+/*Botão Saiba Mais*/
+p.sbm {
+    margin-top: 20px;
+    color: #7c07b3;
+    font-weight: bolder;
+    transition: all 1s;
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    position: relative;
+}
+
+p.sbm::after {
+    content: " ";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: #7c07b3;
+    transition: all 0.5s;
+}
+
+p.sbm:hover::after {
+    width: 100%;
+}
+
+p.sbm span {
+    transform: translateY(6px);
+}
+
+/*Div com as setas*/
+main section#sct-2 > div {
+    text-align: center;
+}
+
+main section#sct-2 > div span {
+    font-size: 2em;
+    cursor: pointer;
+    transition: all 0.5s;
+    padding: 10px;
+    border-radius: 50%;
+    transform: translateY(-40px);
+}
+
+main section#sct-2 > div span:hover {
+    background-color: #8000802a;
+}
+
+/*Terceria Section*/
+main section#sct-3 article {
+    padding: 40px 25px 0px 25px;
+}
+
+main section#sct-3 article figure img {
+    width: 100%;
+}
+
+main section#sct-3 article p.sbm {
+    position: relative;
+    bottom: 4px;
+    left: 0px;
+    font-size: 1em;
+    margin-bottom: 45px;
+}
+
+main section#sct-3 h2 {
+    margin: 20px 0px;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+main section#sct-3 article h2:hover {
+    text-decoration: underline;
+}
+
+main sectioN#sct-3 article p {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+/*Primeiro article da terceira section*/
+main sectioN#sct-3 article:nth-child(1) {
+    background-color: #d3d3d35e;
+}
+
+main section#sct-3 article:nth-child(1) h2 {
+    color: #7c07b3;
+}
+
+/*Segundo Article da terceira section*/
+main section#sct-3 article:nth-child(2) {
+    background-color: #300444;
+    color: white;
+}
+
+main section#sct-3 article:nth-child(2) p.sbm {
+    color: white;
+}
+
+main section#sct-3 article:nth-child(2) p.sbm::after {
+    background-color: white;
+}
+
+/*Quarta Section*/
+main section#sct-4 article {
+    padding: 25px;
+}
+
+main section#sct-4 article h2 {
+    font-size: 2em;
+    text-align: justify;
+}
+
+/*Primeiro Article da quarta section*/
+main section#sct-4 article:nth-child(1) div {
+    margin: 35px 0px ;
+    text-align: justify;
+}
+
+main section#sct-4 article:nth-child(1) div h3 {
+    margin: 10px 0px;
+}
+
+main section#sct-4 article:nth-child(1) div p {
+    font-size: 1.1em;
+}
+
+/*Segundo article da quarta section*/
+main section#sct-4 article:nth-child(2) {
+    padding: 0px;
+}
+
+main section#sct-4 article:nth-child(2) h2 {
+    color: #7c07b3;
+    padding: 0px 20px;
+}
+
+main section#sct-4 article:nth-child(2) div.pdr_nu {
+    display: inline-grid;
+    width: 320px;
+    height: 425px;
+    border-radius: 20px;
+    background-color: #d3d3d37e;
+    text-wrap: wrap;
+    margin: 10px 15px 0px 0px;
+}
+
+main section#sct-4 article:nth-child(2) div.pdr_nu div {
+    padding: 20px;
+}
+
+main section#sct-4 article:nth-child(2) div img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main section#sct-4 article:nth-child(2) div .sbm {
+    transform: translateY(-15px);
+}
+
+main section#sct-4 article:nth-child(2) h3 {
+    color: #7c07b3;
+    margin: 10px 0px 20px 0px;
+}
+
+main section#sct-4 article:nth-child(2) > div {
+    overflow-x: auto;
+    overflow-y: hidden;
+    text-wrap: nowrap;
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+
+main section#sct-4 article:nth-child(2) > div::-webkit-scrollbar {
+    height: 0px;
+}
+
+/*Quinta section*/
+main section#sct-5 {
+    margin-top: 70px;
+}
+
+main section#sct-5 article {
+    padding: 70px 20px;
+}
+
+main section#sct-5 article p {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+main sectioN#sct-5 article h2 {
+    margin: 20px 0px;
+    font-size: 2em;
+}
+
+main sectioN#sct-5 article p.sbm {
+    font-size: 1em;
+}
+
+main section#sct-5 article figure img {
+    width: 100%;
+}
+
+main sectioN#sct-5 article h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Background dos article*/
+main section#sct-5 article:nth-child(1) {background-color: #d3d3d37e;}
+main section#sct-5 article:nth-child(2) {background-color: #7c07b3;}
+main section#sct-5 article:nth-child(3) {background-color: #300444;} 
+main section#sct-5 article:nth-child(4) {background-color: #d3d3d37e;}
+
+/*Primeiro article && Quarto article*/
+main section#sct-5 article:nth-child(1) h2, main section#sct-5 article:nth-child(4) h2 {
+    color: #7c07b3;
+}
+
+/*Segundo article && Terceiro article*/
+main section#sct-5 article:nth-child(2), main section#sct-5 article:nth-child(3) {color: white;}
+main section#sct-5 article:nth-child(2) .sbm, main section#sct-5 article:nth-child(3) .sbm {color: white;}
+
+main section#sct-5 article:nth-child(2) .sbm::after, main section#sct-5 article:nth-child(3) .sbm::after {
+    background-color: white;
+}
+
+/*Sexta Section*/
+main section#sct-6 article {
+    margin-top: 50px;
+}
+
+main section#sct-6 article section {
+    padding: 20px;
+}
+
+main section#sct-6 article h2 {
+    font-size: 2em;
+}
+
+main section#sct-6 article .sbm {
+    width: 185px;
+    transform: translateY(-15px);
+}
+
+/*Divs do article*/
+main section#sct-6 article > div {
+    text-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+}
+
+main section#sct-6 article > div::-webkit-scrollbar {
+    height: 0px;
+}
+
+main section#sct-6 article > div > div {
+    width: 300px;
+    border: 1px solid #00000033;
+    border-radius: 20px;
+    display: inline-grid;
+    text-wrap: wrap;
+    margin-right: 20px;
+}
+
+main section#sct-6 article figure img {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+main section#sct-6 article .txt-dstq {
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin: 10px 0px 20px 0px;
+}
+
+main sectioN#sct-6 article .txt-pq {
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+main section#sct-6 article div > div > div {
+    padding: 0px 20px;
+}
+
+/*Setima Section*/
+main section#sct-7 {
+    margin-top: 30px;
+}
+
+main section#sct-7 h2 {
+    font-size: 2em;
+}
+
+main section#sct-7 div:nth-child(1) {background-image: url(../imagens/bg/fim_de_tarde_1.jpg);}
+main section#sct-7 div:nth-child(2) {background-image: url(../imagens/bg/fim_de_tarde_2.jpg);}
+main section#sct-7 div:nth-child(3) {background-image: url(../imagens/bg/fim_de_tarde_3.jpg);}
+
+main section#sct-7 div {
+    background-size: cover;
+    background-position: center bottom;
+    padding: 30px 30px 310px 30px;
+    color: white;
+}
+
+main section#sct-7 div .sbm {
+    color: white;
+    width: 100%;
+}
+
+main sectioN#sct-7 div .sbm::after {
+    background-color: white;
+}
+
+/*Rodapé*/
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 60px 0px;
+}
+
+footer div {
+    padding: 0px 30px;
+}
+
+footer h2 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 30px 0px;
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+footer ul li:hover {
+    color: #7c07b3;
+}
+
+footer figure img {
+    width: 50px;
+    margin-bottom: 40px;
+}
+
+footer .nubank_icon img {
+    filter: brightness(100);
+}
+
+footer aside {
+    margin-top: 100px;
+    border-top: 1px solid #2b2a2a63;
+    padding: 60px 30px;
+}
+
+footer aside #redes {
+    margin-top: 50px;
+    display: flex; 
+    justify-content: left;
+    gap: 30px;
+}
+
+footer aside #redes img {
+    border-radius: 10px;
+    width: 25px;
+    cursor: pointer;
+}
