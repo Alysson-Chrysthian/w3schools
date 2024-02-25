@@ -67,6 +67,7 @@ main sectioN#sct-3 article:nth-child(1) {
 main section#sct-4 article:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
     width: 1000px;
     margin: auto;
 }
@@ -117,6 +118,7 @@ main section#sct-6 article > div > div {
 
 /*Setima Section*/
 main section#sct-7 article div {
+    padding-top: 200px;
     display: flex;
     justify-content: space-between;
     width: 100%;
