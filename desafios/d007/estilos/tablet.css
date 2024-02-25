@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*Primeira Section*/
+main section#sct-1 {
+    background-position: center top;
+}
+
+section#sct-1 article {
+    display: grid;
+    grid-template-areas: 'titulo';
+}
+
+section#sct-1 article h1 {
+    font-size: 2.4em;
+    text-align: left;
+}
+
+section#sct-1 article p {
+    font-size: 1.3em;
+}
+
+/*Segunda Section*/
+section#sct-2 article section {
+    display: inline-block;
+}
+
+/*Terceira Section*/
+main section#sct-3 article {
+    display: grid;
+    grid-template-areas: 
+    'texto texto'
+    'figura figura';
+    padding: 50px;
+}
+
+section#sct-3 article figure img {
+    margin-bottom: 60px;
+}
+
+section#sct-3 article h2 {
+    font-size: 3em;
+}
+
+/*Quarta Section*/
+section#sct-4 article:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 25px;
+}
+
+main section#sct-4 article h2 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+/*Quinta Section*/
+main section#sct-5 article {padding: 50px;}
+main section#sct-5 article p {font-size: 1.5em;}
+main section#sct-5 article .sbm {font-size: 1em;}
+main section#sct-5 article:nth-last-child(1) {font-size: 1.5em;}
+main section#sct-5 article:nth-last-child(1) .sbm {font-size: 0.7em;}
+
+/*Sexta Section*/
+main section#sct-6 article {
+    font-size: 1em;
+}
+
+/*Setima section*/
+main section#sct-7 article div {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 50%;
+    padding-bottom: 250px;
+}
+
+main section#sct-7 article div h2 {
+    font-size: 2.5em;
+}
+
+/*Rodapé*/
+footer > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+footer div {
+    padding: 0px 40px;
+}
+
+footer aside {
+    display: grid;
+    justify-content: space-evenly;
+}

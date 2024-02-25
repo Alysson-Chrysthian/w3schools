@@ -422,20 +422,20 @@ main sectioN#sct-5 article h2:hover {
 
 /*Background dos article*/
 main section#sct-5 article:nth-child(1) {background-color: #d3d3d37e;}
-main section#sct-5 article:nth-child(2) {background-color: #7c07b3;}
-main section#sct-5 article:nth-child(3) {background-color: #300444;} 
-main section#sct-5 article:nth-child(4) {background-color: #d3d3d37e;}
+main section#sct-5 aside article:nth-child(1) {background-color: #7c07b3;}
+main section#sct-5 aside article:nth-child(2) {background-color: #300444;} 
+main section#sct-5 article:nth-last-child(1) {background-color: #d3d3d37e;}
 
 /*Primeiro article && Quarto article*/
-main section#sct-5 article:nth-child(1) h2, main section#sct-5 article:nth-child(4) h2 {
+main section#sct-5 > article:nth-child(1) h2, main section#sct-5 article:nth-child(4) h2 {
     color: #7c07b3;
 }
 
 /*Segundo article && Terceiro article*/
-main section#sct-5 article:nth-child(2), main section#sct-5 article:nth-child(3) {color: white;}
-main section#sct-5 article:nth-child(2) .sbm, main section#sct-5 article:nth-child(3) .sbm {color: white;}
+main section#sct-5 aside article:nth-child(1), main section#sct-5 aside article:nth-child(2) {color: white;}
+main section#sct-5 aside article:nth-child(1) .sbm, main section#sct-5 aside article:nth-child(2) .sbm {color: white;}
 
-main section#sct-5 article:nth-child(2) .sbm::after, main section#sct-5 article:nth-child(3) .sbm::after {
+main section#sct-5 aside article:nth-child(1) .sbm::after, main section#sct-5 aside article:nth-child(2) .sbm::after {
     background-color: white;
 }
 
@@ -534,7 +534,7 @@ footer {
 }
 
 footer div {
-    padding: 0px 30px;
+    padding: 0px 15px;
 }
 
 footer h2 {
