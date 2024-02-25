@@ -249,6 +249,7 @@ main section#sct-2 > div span {
     padding: 10px;
     border-radius: 50%;
     transform: translateY(-40px);
+    user-select: none;
 }
 
 main section#sct-2 > div span:hover {
