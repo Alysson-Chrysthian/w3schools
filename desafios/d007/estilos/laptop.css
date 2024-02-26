@@ -63,6 +63,10 @@ main sectioN#sct-3 article:nth-child(1) {
     flex-direction: row-reverse;
 }
 
+main section#sct-3 article img {
+    padding: 50px;
+}
+
 /*Quarta Section*/
 main section#sct-4 article:nth-child(1) {
     display: grid;
